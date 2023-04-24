@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="{% static 'images/favicon.ico' %}">
+<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script> 
+<script src="{% static 'js/superfish.js' %}"></script>
+<script src="{% static 'js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'js/tmStickUp.js' %}"></script>
+<script src="{% static 'js/jquery.ui.totop.js' %}"></script>
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+ }); 
+
+</script>
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+
+<body>
+<!--==============================
+              header
+=================================-->
+<header>
+  <div class="header_top">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <h1><a href="{% url 'index' %}"> <br> </a></h1>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="stuck_container">
+  <!--==============================
+              Stuck menu
+  =================================-->
+    <div class="container">
+      <div class="row">
+        <div class="grid_12 ">
+          <h1 class="logo">
+            <a href="{% url 'index' %}">
+              Stable Tanzania Limited
+            </a>
+          </h1>
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="{% url 'index' %}">Home</a></li>
+               <li class="current"><a href="{% url 'about' %}">About</a></li>
+               <li><a href="{% url 'gallery' %}">Gallery</a></li>
+              
+               <li><a href="{% url 'contacts' %}">Contacts</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>       
+         <div class="clear"></div>  
+        </div>
+     </div> 
+    </div> 
+  </section>
+</header>
+<!--=====================
+          Content
+======================-->
+<section id="content"><div class="ic">Website first deployed on 1/10/2022</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h2>Our Services</h2>
+          <img src="{% static 'images/pic7.jpg' %}" alt="" class="img_inner fleft">
+          <p><h4>Depending on your demand and desire, we offer the following products.</h4></p>
+          <p>We provide a large A2 product for 55,000 Tanzanian Shillings.</p>
+          <p>We provide an A3 product for 25,000 Tanzanian Shillings.</p>
+          <p>We provide a common A4 product for 15,000 Tanzanian Shillings.</p>
+          
+          <p>We provide an A5 product for only 10,000 Tanzanian Shillings.</p>
+          <p>Please fill free to contact us for any of your works.</p>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h2>My Biography and Experience</h2>
+          <img src="{% static 'images/pic141.jpg' %}" alt="" class="img_inner fleft">
+          <p>Stable Tanzania Limited is a branding company that is a solution to the advertisements challenges that your firm is facing.</p>
+          <p>We ensure that your potential customers are reached no matter the location they are found.</p>
+          <p>We also provide services that involve designing and making pictures on frame boards for your memories and advertisements.</p>
+          
+          <p>As it is said, 'A picture speaks a thousand words'.</p>
+          <p>Please fill free to contact us for any of your works.</p>
+          <p>Meet the people involved in Stable Tanzania Limited to ensure that your brand shines.</p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="sep-1 offset__1"></div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h3>My Recent  Awards</h3>
+      </div>
+      <div class="grid_3">
+        <div class="block-1">
+          <div class="fa fa-image"></div>
+          <div class="block-1_title">Aliquam nibh ante</div>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit
+          <br>
+          <a href="#" class="btn">more</a>
+        </div>
+      </div>
+      <div class="grid_3">
+        <div class="block-1">
+          <div class="fa fa-trophy"></div>
+          <div class="block-1_title">Kiam nibh anteli</div>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit
+          <br>
+          <a href="#" class="btn">more</a>
+        </div>
+      </div>
+      <div class="grid_3">
+        <div class="block-1">
+          <div class="fa fa-star"></div>
+          <div class="block-1_title">Nomilonibh anter</div>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit
+          <br>
+          <a href="#" class="btn">more</a>
+        </div>
+      </div>
+      <div class="grid_3">
+        <div class="block-1">
+          <div class="fa fa-camera"></div>
+          <div class="block-1_title">Moliuam nibh anteg</div>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit
+          <br>
+          <a href="#" class="btn">more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12"> 
+        <h2>Contacts</h2>
+        <div class="footer_phone">+255 744 222 833</div>
+        <a href="#" class="footer_mail">info@stabletanzania.co.tz</a>
+        <div class="sub-copy">developed and maintained by <a href="http://www.templatemonster.com/" rel="nofollow">hevatech</a></div>
+      </div>
+    </div>
+
+  </div>  
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+</body>
+</html>
+
